@@ -14,9 +14,12 @@ p {
 
 .image {
     border: 2px solid black;
+    border-radius: 10px;
 }
 
 .aggiungiAlCarrello {
     width: 50%;
     height: 25%;
+    background-color: aliceblue;
+    border-radius: 15px;
 }
