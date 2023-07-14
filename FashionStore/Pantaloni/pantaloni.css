@@ -1,0 +1,16 @@
+ul {
+    white-space: nowrap;
+  }
+  
+  ul, li {
+    list-style: none;
+    display: inline;
+    
+  }
+
+  .img{
+    padding: 1%;
+    border-color: black;
+    border: 2px solid black;
+  }
+
