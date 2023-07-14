@@ -1,0 +1,16 @@
+body{
+    background-color: white;
+}
+.maglie {
+    display: flex;
+    align-items: center;
+}
+
+
+.testo{
+    display: flex;
+    background-color: rgb(159, 224, 243);
+    border-left: 5px solid rgb(0, 0, 0);
+    padding: 1rem;
+    flex-direction: row;
+}
