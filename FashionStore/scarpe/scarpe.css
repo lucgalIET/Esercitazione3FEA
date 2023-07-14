@@ -1,0 +1,25 @@
+body {
+    background-color:azure ;
+}
+
+.prodotto {
+    margin: 3%;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    margin: 5%;
+}
+
+.image {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.aggiungiAlCarrello {
+    width: 50%;
+    height: 25%;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
