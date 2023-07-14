@@ -8,28 +8,28 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="pantaloni.css">
+    
 
     <title>Hello, world!</title>
   </head>
   <body >
     <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="../home/home.html">Progetto Bootstrap</a>
+          <a class="navbar-brand" href="../home/home.html">FashionStore</a>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../libreria/libreria.html">Libreria</a>
+              <a class="nav-link" href="../magliette/magliette.html">Magliette</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../contatti/contatti.html">Contatti</a>
+              <a class="nav-link" href="../scarpe/scarpe.html">Scarpe</a>
             </li>
             <ul>
               <li class="nav-item">
                 <div class="dropdown">
-                    <button class="dropbtn">Carrello</button>
-                    <div class="dropdown-content">
-                      <a href="#">Pantalone</a>
-                      <a href="#">Pantalone 2</a>
-                      <a href="#">Pantalone 3</a>
+                    <a class="dropbtn">Carrello</a>
+                    <div id="carrello" class="dropdown-content">
+                      <a href="#">Vuoto</a>
+                      
                     </div>
                   </div>
               </li>
@@ -107,14 +107,14 @@
                             <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
                             <span class="d-none d-sm-inline mx-1">loser</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <ul id="items" class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                            <li id="item" ><a class="dropdown-item" href="#">New project...</a></li>
                             <li><a class="dropdown-item" href="#">Settings</a></li>
                             <li><a class="dropdown-item" href="#">Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Carrello</a></li>
+                            <li><button class="dropdown-item" href="#">Carrello</button></li>
                         </ul>
                     </div>
                 </div>
@@ -129,35 +129,35 @@
             <div class="container">
             <div class="row align-items-start">
           <div class="card col-sm" style="width: 18rem;">
-            <img src="https://i.ebayimg.com/00/s/MTU1MlgxMDMx/z/Y1UAAOSwWB5cZ17D/$_10.JPG?set_id=8800005007"  class="card-img-top img" alt="...">
+            <img id="imgId" src="https://i.ebayimg.com/00/s/MTU1MlgxMDMx/z/Y1UAAOSwWB5cZ17D/$_10.JPG?set_id=8800005007"  class="card-img-top img" alt="...">
             <div class="card-body">
               <h5 class="card-title">In Stock</h5>
-              <p class="card-text">30.99€</p>
-              <a href="#" class="btn btn-primary">Aggiungi Al Carrello</a>
+              <p id="prezzoId" class="card-text">30.99€</p>
+              <button id="btn" href="#" class="btn btn-primary">Aggiungi Al Carrello #</button>
             </div>
           </div>        
           <div class="card col-sm" style="width: 18rem;">
             <img src="https://images-na.ssl-images-amazon.com/images/I/61wJxmFITZL._AC_UL1500_.jpg"  class="card-img-top img" alt="...">
             <div class="card-body">
               <h5 class="card-title">In Stock</h5>
-              <p class="card-text">30.99€</p>
-              <a href="#" class="btn btn-primary">Aggiungi Al Carrello</a>
+              <p id="prezzoId" class="card-text">30.99€</p>
+              <button id="btn" href="#" class="btn btn-primary">Aggiungi Al Carrello</button>
             </div>
           </div>
-          <div class="card col-sm" style="width: 18rem;">
+          <div  class="card col-sm" style="width: 18rem;">
             <img src="https://images-na.ssl-images-amazon.com/images/I/61JdI4pdK4L._AC_SX522_.jpg" df class="card-img-top img" alt="...">
             <div class="card-body">
               <h5 class="card-title">In Stock</h5>
-              <p class="card-text">30.99€</p>
-              <a href="#" class="btn btn-primary">Aggiungi Al Carrello</a>
+              <p id="prezzoId" class="card-text">30.99€</p>
+              <button id="btn" href="#" class="btn btn-primary">Aggiungi Al Carrello</button>
             </div>
           </div>
           <div class="card col-sm" style="width: 18rem;">
             <img src="https://images-na.ssl-images-amazon.com/images/I/61DNwOpnsYL._AC_UX425_.jpg"  class="card-img-top img" alt="...">
             <div class="card-body">
               <h5 class="card-title">In Stock</h5>
-              <p class="card-text">30.99€</p>
-              <a href="#" class="btn btn-primary">Aggiungi Al Carrello</a>
+              <p id="prezzoId" class="card-text">30.99€</p>
+              <button id="btn" href="#" class="btn btn-primary">Aggiungi Al Carrello</button>
             </div>
           </div>
         
@@ -168,32 +168,32 @@
                 <img src="https://cdn.karmaloopassets.com/media/catalog/product/cache/image/1200x1200/e9c3970ab036de70892d86c6d221abfe/2/d/2dd881fd22579f271fe659a84711c2e3.jpg"  class="card-img-top img" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">In Stock</h5>
-                <p class="card-text">30.99€</p>
-                <a href="#" class="btn btn-primary">Aggiungi Al Carrello</a>
+                <p id="prezzoId" class="card-text">30.99€</p>
+                <button id="btn" href="#" class="btn btn-primary">Aggiungi Al Carrello</button>
                 </div>
             </div>        
             <div class="card col" style="width: 18rem;">
                 <img src="https://imagescdn.simons.ca/images/10476-20302-6-A1_2/rothsay-cargo-joggers.jpg?__=7"  class="card-img-top img" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">In Stock</h5>
-                <p class="card-text">30.99€</p>
-                <a href="#" class="btn btn-primary">Aggiungi Al Carrello</a>
+                <p id="prezzoId" class="card-text">30.99€</p>
+                <button id="btn" href="#" class="btn btn-primary">Aggiungi Al Carrello</button>
                 </div>
             </div>
             <div class="card col" style="width: 18rem;">
                 <img src="https://imagescdn.simons.ca/images/11017-20110-4-A1_2/cargo-joggers.jpg?__=18"  class="card-img-top img" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">In Stock</h5>
-                <p class="card-text">30.99€</p>
-                <a href="#" class="btn btn-primary">Aggiungi Al Carrello</a>
+                <p id="prezzoId" class="card-text">30.99€</p>
+                <button id="btn" href="#" class="btn btn-primary">Aggiungi Al Carrello</button>
                 </div>
             </div>
             <div class="card col" style="width: 18rem;">
                 <img src="https://images.asos-media.com/products/bolongaro-trevor-skinny-fit-cargo-cuffed-trousers/23113070-1-grey?$n_640w$&wid=513&fit=constrain"  class="card-img-top img" alt="...">
                 <div class="card-body">
                 <h5 class="card-title">In Stock</h5>
-                <p class="card-text">20.99€</p>
-                <a href="#" class="btn btn-primary">Aggiungi Al Carrello</a>
+                <p id="prezzoId" class="card-text">20.99€</p>
+                <button id="btn" href="#" class="btn btn-primary">Aggiungi Al Carrello</button>
                 </div>
             </div>
             </div>
@@ -203,6 +203,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="pantaloni.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
